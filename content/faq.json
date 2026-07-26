@@ -1,0 +1,42 @@
+[
+    {
+        "otazka": "Jak se připojit na server?",
+        "odpoved": "Otevři Minecraft, zvol Multiplayer, přidej server s IP adresou shadowbladesmp.org a připoj se. Podporujeme Java i Bedrock edici."
+    },
+    {
+        "otazka": "Jaká je IP adresa serveru?",
+        "odpoved": "IP adresa je <strong>shadowbladesmp.org</strong>. Stačí ji zadat do Multiplayer menu v Minecraftu."
+    },
+    {
+        "otazka": "Jakou verzi Minecraftu potřebuji?",
+        "odpoved": "Podporujeme verze 1.20.x až 1.21.x. Doporučujeme použít nejnovější verzi pro nejlepší zážitek."
+    },
+    {
+        "otazka": "Je podporovaný Bedrock?",
+        "odpoved": "Ano! Podporujeme jak Java, tak Bedrock edici. Pro Bedrock použij stejnou IP shadowbladesmp.org a port 19132."
+    },
+    {
+        "otazka": "Jak hlasovat pro server?",
+        "odpoved": "Navštiv stránku Hlasování na našem webu nebo hlasuj přímo na Planet Minecraft. Každý hlas nám pomáhá a ty získáš skvělé odměny!"
+    },
+    {
+        "otazka": "Jak kontaktovat tým?",
+        "odpoved": "Nejrychlejší způsob je připojit se na náš Discord server. Tam můžeš otevřít ticket nebo napsat přímo členům týmu."
+    },
+    {
+        "otazka": "Jsou na serveru nějaké ranky?",
+        "odpoved": "Ano, máme propracovaný rank systém. Hratelné ranky získáš hraním (Novice > Master) a donator ranky jsou k dispozici pro podporovatele."
+    },
+    {
+        "otazka": "Jak funguje ochrana pozemků?",
+        "odpoved": "Pomocí zlaté lopatky si označ rohy pozemku a použij /claim. Nikdo kromě tebe a pověřených hráčů nebude moci na tvém pozemku stavět."
+    },
+    {
+        "otazka": "Jsou na serveru eventy?",
+        "odpoved": "Ano! Pořádáme pravidelné eventy jako PvP turnaje, lovení pokladů, build battles a speciální sezónní akce. Sleduj Discord pro aktuální informace."
+    },
+    {
+        "otazka": "Můžu hrát s přáteli?",
+        "odpoved": "Ano, můžeš! Můžeš vytvářet party, sdílet pozemky a spolupracovat s přáteli. Podporujeme cross-play mezi Java a Bedrock."
+    }
+]

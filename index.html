@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShadowBlade SMP - Moderní český Minecraft Survival server s aktivní komunitou. Java & Bedrock. Připoj se nyní!">
+    <meta name="keywords" content="Minecraft, server, ShadowBlade, SMP, survival, český server, Minecraft server">
+    <meta name="author" content="ShadowBlade SMP">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="ShadowBlade SMP | Minecraft Server">
+    <meta property="og:description" content="Moderní český Minecraft Survival server s aktivní komunitou.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shadowbladesmp.org">
+    <meta property="og:image" content="https://shadowbladesmp.org/assets/images/og-image.svg">
+    <meta property="og:locale" content="cs_CZ">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ShadowBlade SMP | Minecraft Server">
+    <meta name="twitter:description" content="Moderní český Minecraft Survival server s aktivní komunitou.">
+    <meta name="theme-color" content="#0a0a0f">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://shadowbladesmp.org">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2310b981'/%3E%3Ctext x='16' y='22' font-size='20' text-anchor='middle' fill='white'%3E⚔%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2310b981'/%3E%3Ctext x='16' y='22' font-size='20' text-anchor='middle' fill='white'%3E⚔%3C/text%3E%3C/svg%3E">
+    
+    <title>ShadowBlade SMP | Moderní Minecraft Survival Server</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Mouse Glow -->
+    <div id="mouse-glow"></div>
+
+    <!-- Intro Overlay Animation -->
+    <div class="intro-overlay" id="intro-overlay">
+        <div class="intro-particles"></div>
+        <div class="intro-sword">⚔️</div>
+        <div class="intro-text">
+            <div class="intro-title">ShadowBlade SMP</div>
+            <div class="intro-sub">Minecraft Survival Server</div>
+        </div>
+    </div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">⚔️</div>
+                <div class="logo-text">Shadow<span>Blade</span> SMP</div>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Domů</a></li>
+                <li><a href="server.html">O serveru</a></li>
+                <li><a href="features.html">Funkce</a></li>
+                <li><a href="rules.html">Pravidla</a></li>
+                <li><a href="vote.html">Hlasování</a></li>
+                <li><a href="hodnoceni.html">⭐ Hodnocení</a></li>
+                <li><a href="wiki.html">Wiki</a></li>
+                <li><a href="team.html">Tým</a></li>
+                <li><a href="news.html">Novinky</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="https://dsc.gg/shadowbladesmp" target="_blank" rel="noopener" class="discord-link">💬 Discord</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Načítám stav serveru...</span>
+                </div>
+
+                <h1>ShadowBlade SMP</h1>
+                <p class="hero-subtitle">
+                    Moderní český Minecraft Survival server s aktivní komunitou, 
+                    pravidelnými aktualizacemi a unikátním herním zážitkem.
+                </p>
+
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-copy copy-ip" data-ip="shadowbladesmp.org">
+                        ⚡ Připojit se • shadowbladesmp.org
+                    </button>
+                    <a href="https://dsc.gg/shadowbladesmp" target="_blank" rel="noopener" class="btn btn-discord">
+                        💬 Discord
+                    </a>
+                </div>
+
+                <!-- Server Status -->
+                <div class="server-status-card">
+                    <div class="status-icon-box">
+                        <div class="status-icon">
+                            🔄
+                        </div>
+                        <img class="server-favicon" src="" alt="Server icon" style="display:none;">
+                    </div>
+                    <div class="status-info">
+                        <div class="status-label">Stav serveru</div>
+                        <div class="status-value">Načítám...</div>
+                        <div class="status-motd"></div>
+                        <div class="status-details">
+                            <span>Hráči: <strong>?</strong></span>
+                            <span>Verze: <strong>?</strong></span>
+                            <span>Ping: <strong>?</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card fade-in">
+                    <span class="stat-icon">👥</span>
+                    <div class="stat-number loading" data-stat="online-players">—</div>
+                    <div class="stat-label">Aktuální hráči</div>
+                </div>
+                <div class="stat-card fade-in delay-1">
+                    <span class="stat-icon">📊</span>
+                    <div class="stat-number">10 000+</div>
+                    <div class="stat-label">Celkoví hráči</div>
+                </div>
+                <div class="stat-card fade-in delay-2">
+                    <span class="stat-icon">💬</span>
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Discord členové</div>
+                </div>
+                <div class="stat-card fade-in delay-3">
+                    <span class="stat-icon">🗳️</span>
+                    <div class="stat-number">1 000+</div>
+                    <div class="stat-label">Hlasy</div>
+                </div>
+                <div class="stat-card fade-in delay-4">
+                    <span class="stat-icon">⏰</span>
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Co nabízíme</span>
+                <h2>Proč hrát na ShadowBlade SMP?</h2>
+                <p>Unikátní herní zážitek plný funkcí a možností.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">⚔️</div>
+                    <h3>Custom Pluginy</h3>
+                    <p>Více než 50 unikátních pluginů vytvořených přímo pro ShadowBlade SMP. Každý detail je dolaďen k dokonalosti.</p>
+                </div>
+                <div class="feature-card fade-in delay-1">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Anti-Cheat Ochrana</h3>
+                    <p>Pokročilá ochrana proti cheatům a exploitům. Fair play je pro nás prioritou číslo jedna.</p>
+                </div>
+                <div class="feature-card fade-in delay-2">
+                    <div class="feature-icon">💰</div>
+                    <h3>Ekonomika</h3>
+                    <p>Propracovaný ekonomický systém s vlastní měnou, shopem a trhem. Vydělej si na své sny!</p>
+                </div>
+                <div class="feature-card fade-in delay-3">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Regiony & Ochrana</h3>
+                    <p>Stav bez obav – tvé stavby jsou v bezpečí díky propracovanému systému ochrany.</p>
+                </div>
+                <div class="feature-card fade-in delay-4">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Pravidelné Eventy</h3>
+                    <p>Každý týden nové eventy, soutěže a speciální akce s unikátními odměnami.</p>
+                </div>
+                <div class="feature-card fade-in delay-5">
+                    <div class="feature-icon">🎁</div>
+                    <h3>Crates & Odměny</h3>
+                    <p>Různé typy crate beden s unikátními itemy, ranky a speciálními kosmetickými doplňky.</p>
+                </div>
+                <div class="feature-card fade-in delay-6">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Multiplatforma</h3>
+                    <p>Podpora Java i Bedrock edice. Hraj s přáteli bez ohledu na to, jakou verzi Minecraftu vlastníš.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Aktivní Komunita</h3>
+                    <p>Přátelská česká a slovenská komunita. Discord server s více než 500 členy plnými akce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord Section -->
+    <section class="section">
+        <div class="container">
+            <div class="discord-section fade-in-scale">
+                <h2>💬 Připoj se na náš Discord</h2>
+                <p>Komunita, eventy, oznámení a mnohem více. Připoj se k nám!</p>
+                
+                <div class="discord-features">
+                    <span><span class="check">✓</span> Komunitní chat</span>
+                    <span><span class="check">✓</span> Oznámení o eventech</span>
+                    <span><span class="check">✓</span> Technická podpora</span>
+                    <span><span class="check">✓</span> Giveaway</span>
+                </div>
+
+                <a href="https://dsc.gg/shadowbladesmp" target="_blank" rel="noopener" class="btn btn-discord">
+                    💬 Připojit se na Discord
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">⚔️</div>
+                        <h3>ShadowBlade SMP</h3>
+                    </div>
+                    <p>Moderní český Minecraft Survival server. Java & Bedrock. Připoj se k nám a zažij nezapomenutelná dobrodružství!</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Odkazy</h4>
+                    <ul>
+                        <li><a href="index.html">Domů</a></li>
+                        <li><a href="server.html">O serveru</a></li>
+                        <li><a href="features.html">Funkce</a></li>
+                        <li><a href="news.html">Novinky</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Informace</h4>
+                    <ul>
+                        <li><a href="wiki.html">Wiki</a></li>
+                        <li><a href="rules.html">Pravidla</a></li>
+                        <li><a href="vote.html">Hlasování</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Komunita</h4>
+                    <ul>
+                        <li><a href="https://dsc.gg/shadowbladesmp" target="_blank" rel="noopener">Discord</a></li>
+                        <li><a href="team.html">Tým</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShadowBlade SMP. Všechna práva vyhrazena.</p>
+                <span class="footer-ip copy-ip" data-ip="shadowbladesmp.org">
+                    🌐 shadowbladesmp.org
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Zpět nahoru">↑</button>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/server-status.js"></script>
+</body>
+</html>

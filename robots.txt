@@ -1,0 +1,5 @@
+# ShadowBlade SMP - Robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://shadowbladesmp.org/sitemap.xml

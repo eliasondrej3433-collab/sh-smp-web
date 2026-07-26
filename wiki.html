@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wiki Minecraft serveru ShadowBlade SMP - návody, příkazy, ekonomika a více.">
+    <meta name="theme-color" content="#0a0a0f">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Wiki | ShadowBlade SMP">
+    <meta property="og:description" content="Wiki Minecraft serveru ShadowBlade SMP - návody, příkazy, ekonomika a více.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shadowbladesmp.org/wiki.html">
+    <meta property="og:image" content="https://shadowbladesmp.org/assets/images/og-image.svg">
+    <meta property="og:locale" content="cs_CZ">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wiki | ShadowBlade SMP">
+    <meta name="twitter:description" content="Wiki Minecraft serveru ShadowBlade SMP - návody, příkazy, ekonomika a více.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2310b981'/%3E%3Ctext x='16' y='22' font-size='20' text-anchor='middle' fill='white'%3E⚔%3C/text%3E%3C/svg%3E">
+    <title>Wiki | ShadowBlade SMP</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="canonical" href="https://shadowbladesmp.org/wiki.html">
+</head>
+<body id="wiki-page">
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Mouse Glow -->
+    <div id="mouse-glow"></div>
+
+    <!-- Intro Overlay Animation -->
+    <div class="intro-overlay" id="intro-overlay">
+        <div class="intro-particles"></div>
+        <div class="intro-sword">⚔️</div>
+        <div class="intro-text">
+            <div class="intro-title">ShadowBlade SMP</div>
+            <div class="intro-sub">Minecraft Survival Server</div>
+        </div>
+    </div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particles-canvas"></canvas>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">⚔️</div>
+                <div class="logo-text">Shadow<span>Blade</span> SMP</div>
+            </a>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="server.html">O serveru</a></li>
+                <li><a href="features.html">Funkce</a></li>
+                <li><a href="rules.html">Pravidla</a></li>
+                <li><a href="vote.html">Hlasování</a></li>
+                <li><a href="hodnoceni.html">⭐ Hodnocení</a></li>
+                <li><a href="wiki.html" class="active">Wiki</a></li>
+                <li><a href="team.html">Tým</a></li>
+                <li><a href="news.html">Novinky</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="https://dsc.gg/shadowbladesmp" target="_blank" rel="noopener" class="discord-link">💬 Discord</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <span class="section-tag">Wiki</span>
+            <h1>Wiki & Návody</h1>
+            <p>Vše, co potřebuješ vědět pro hraní na ShadowBlade SMP.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="wiki-layout">
+                <aside class="wiki-sidebar" id="wiki-sidebar">
+                    <div class="loading-spinner"><div class="spinner"></div></div>
+                </aside>
+                <main id="wiki-content">
+                    <div class="loading-spinner"><div class="spinner"></div><span>Načítám wiki články...</span></div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">⚔️</div>
+                        <h3>ShadowBlade SMP</h3>
+                    </div>
+                    <p>Moderní český Minecraft Survival server. Java & Bedrock.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Odkazy</h4>
+                    <ul>
+                        <li><a href="index.html">Domů</a></li>
+                        <li><a href="server.html">O serveru</a></li>
+                        <li><a href="features.html">Funkce</a></li>
+                        <li><a href="news.html">Novinky</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Informace</h4>
+                    <ul>
+                        <li><a href="wiki.html">Wiki</a></li>
+                        <li><a href="rules.html">Pravidla</a></li>
+                        <li><a href="vote.html">Hlasování</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Komunita</h4>
+                    <ul>
+                        <li><a href="https://dsc.gg/shadowbladesmp" target="_blank" rel="noopener">Discord</a></li>
+                        <li><a href="team.html">Tým</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShadowBlade SMP. Všechna práva vyhrazena.</p>
+                <span class="footer-ip copy-ip" data-ip="shadowbladesmp.org">🌐 shadowbladesmp.org</span>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Zpět nahoru">↑</button>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/content-loader.js"></script>
+</body>
+</html>
